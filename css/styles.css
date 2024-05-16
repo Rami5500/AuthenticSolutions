@@ -11,7 +11,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root {
-  --bs-darkgreen: #082f38;
+  --bs-default: #082f38;
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
@@ -35,7 +35,8 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #0d6efd;
+  /* --bs-primary: #0d6efd; */
+  --bs-primary: #082f38;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -2806,11 +2807,59 @@ textarea.form-control-lg {
   --bs-btn-bg: red; /* Set background to red */
   color: white; /* Optional: change text color to white for better visibility */
 }
+.navbar.bg-default {
+  background-color: #082f38; 
+}
 
 .btn-lightBlue {
-  --bs-btn-bg: #0daed4; /* Set background to red */
-  color: white; /* Optional: change text color to white for better visibility */
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #0daed4;
+  --bs-btn-border-color: #0daed4;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #0ba9c1; /* slightly darker for hover state */
+  --bs-btn-hover-border-color: #0a97ae; /* slightly darker than hover bg */
+  --bs-btn-focus-shadow-rgb: 13, 174, 212; /* rgb version of the main color */
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #098c9b; /* even darker for active state */
+  --bs-btn-active-border-color: #087d89; /* matching the active bg */
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #0daed4;
+  --bs-btn-disabled-border-color: #0daed4;
+
+  color: var(--bs-btn-color);
+  background-color: var(--bs-btn-bg);
+  border-color: var(--bs-btn-border-color);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  /* Hover state */
+  &:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: var(--bs-btn-hover-bg);
+    border-color: var(--bs-btn-hover-border-color);
+  }
+
+  /* Focus state */
+  &:focus {
+    box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), 0.5);
+  }
+
+  /* Active state */
+  &:active {
+    color: var(--bs-btn-active-color);
+    background-color: var(--bs-btn-active-bg);
+    border-color: var(--bs-btn-active-border-color);
+    box-shadow: var(--bs-btn-active-shadow);
+  }
+
+  /* Disabled state */
+  &:disabled {
+    color: var(--bs-btn-disabled-color);
+    background-color: var(--bs-btn-disabled-bg);
+    border-color: var(--bs-btn-disabled-border-color);
+  }
 }
+
 
 .btn-outline-dark {
   color: #212529; /* Ensuring the text color is dark */
@@ -3763,11 +3812,11 @@ textarea.form-control-lg {
   --bs-navbar-toggler-border-radius: 0.375rem;
   --bs-navbar-toggler-focus-width: 0.25rem;
   --bs-navbar-toggler-transition: box-shadow 0.15s ease-in-out;
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensures the navbar stays above other content */
+  width: 100%; /* Ensures it stretches across the full width */
+  background-color: #fff;
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 }
 .navbar > .container,
@@ -6672,7 +6721,7 @@ textarea.form-control-lg {
 }
 
 .text-bg-primary {
-  color: #fff !important;
+  color: #082f38!important;
   background-color: RGBA(13, 110, 253, var(--bs-bg-opacity, 1)) !important;
 }
 
@@ -10853,6 +10902,7 @@ html {
   height: 3rem;
   width: 3rem;
   font-size: 1.5rem;
+  
 }
 
 .bg-featured-blog {
