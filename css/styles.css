@@ -2807,6 +2807,11 @@ textarea.form-control-lg {
   color: white; /* Optional: change text color to white for better visibility */
 }
 
+.btn-lightBlue {
+  --bs-btn-bg: #0daed4; /* Set background to red */
+  color: white; /* Optional: change text color to white for better visibility */
+}
+
 .btn-outline-dark {
   color: #212529; /* Ensuring the text color is dark */
   border-color: #212529; /* Assuming you want the border to match the text */
