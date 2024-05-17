@@ -3,15 +3,29 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>ChatPulse AI</title>
+        <meta name="description" content="Authentic Solutions provides custom AI chatbot solutions to enhance customer service and lead generation, offering comprehensive digital marketing services including SEO, copywriting, and email marketing strategies." />
+        <meta name="author" content="Authentic Solutions" />
+        <title>Authentic Solutions</title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "name": "Authentic Solutions",
+                "url": "http://www.autheticsolutions.co.uk",
+                "logo": "http://www.autheticsolutions.co.uk/assets/LogoSymbol.png",
+                "contactPoint": {
+                    "@type": "ContactPoint",
+                    "telephone": "+07417589468",
+                    "contactType": "customer service"
+                },
+            }
+        </script>
     </head>
     <body class="d-flex flex-column h-100">
         <main class="flex-shrink-0">
@@ -32,39 +46,56 @@
                 </div>
             </nav>
             <!-- Header-->
-            <header class="py-5 text-center" style="background-color: #082f38;"> <!-- Set background color -->
+            <header class="py-5 text-center" style="background-color: #082f38; color: white;">
                 <div class="container px-5">
                     <div class="row gx-5 align-items-center">
-                        <!-- Text Column -->
-                        <div class="col-lg-6 text-start">
-                            <h1 class="fw-bolder text-white mb-2">Launch Your Professional Website Today!</h1> <!-- Change text color to primary -->
+                        <div class="col-lg-6 text-start header-content">
+                            <h1 style="color: white;">Launch Your Professional Website Today!</h1>
+                            <!-- Mobile view logo position -->
+                            <div class="mobile-logo d-lg-none">
+                                <img class="img-fluid" src="./assets/ASLogo.png" alt="Authentic Solutions Agency Logo" style="padding: 20px 0;">
+                            </div>
+                            <h2 style="color: white;">Fast, Affordable, and Fully Managed with Hosting – Starting at Just £30 a Month!</h2>
                             <br>
-                            <br>
-                            <h2 class="fw-bolder text-white mb-2">Fast, Affordable, and Fully Managed with Hosting – Starting at Just £30 a Month!</h2>
-                            <!--
-                                <p class="lead fw-normal text-white mb-4">Take the first step to enhancing your online presence. Our hassle-free web design service includes free initial consultation, comprehensive hosting, and ongoing maintenance. We’re here to make sure you’re delighted with your website.</p>
-                            -->
-                            <br>
-                            <br>
-                            <br>
-                            <br>
-                            <p class="lead fw-normal text-white mb-4">Claim your 14-day free trial while it lasts, only pay after your trial.</p>
-
-                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-start mb-4"> <!-- Align buttons to the left -->
-                                 <a class="btn btn-lightBlue btn-lg px-4 me-sm-3" href="https://calendly.com/admin-5sjs/consultation">Free Consultation</a> <!-- Change button text color to dark -->
-                                 <a class="btn btn-lightBlue btn-lg px-4 me-sm-3" href="#features">Our Services</a>
+                            <p class="lead mb-4">Claim your 14-day free trial while it lasts, only pay after your trial.</p>
+                            <div class="d-grid gap-3 d-sm-flex justify-content-sm-start mb-4">
+                                <a class="btn btn-lightBlue btn-lg px-4 me-sm-3" href="https://calendly.com/admin-5sjs/consultation">Free Consultation</a>
+                                <a class="btn btn-lightBlue btn-lg px-4 me-sm-3" href="#features">Our Services</a>
                             </div>
                         </div>
-                        <!-- Image Column -->
-                        <div class="col-lg-6">
-                            <img class="img-fluid" src="./assets/ASLogo.png" alt="Image"> <!-- Add your image here -->
+                        <div class="col-lg-6 d-none d-lg-block">
+                            <img class="img-fluid" src="./assets/ASLogo.png" alt="Authentic Solutions Agency Logo">
                         </div>
                     </div>
                 </div>
             </header>
+
+
+
+            <style>
+                @media (max-width: 991px) {
+                    .header-content {
+                        text-align: center; /* Centers text for smaller screens */
+                    }
+                    .mobile-logo {
+                        display: block; /* Ensures logo is displayed only on mobile */
+                    }
+                }
             
-            <!-- Features section-->
-            <section class="py-5" id="features">
+                @media (min-width: 992px) {
+                    .mobile-logo {
+                        display: none; /* Hides the mobile-only logo on larger screens */
+                    }
+                    .d-none.d-lg-block {
+                        display: block; /* Ensures the desktop logo is displayed on larger screens */
+                    }
+                }
+            </style>
+            
+
+            
+            <!-- Features Section -->
+            <section id="features" class="py-5" style="background-color: white;">
                 <div class="container px-5 my-5">
                     <div class="row gx-5">
                         <div class="col-lg-4">
@@ -207,7 +238,7 @@
                                     <input type="text" class="form-control" id="budget" name="budget" placeholder="Your budget" required>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit" class="btn btn-light btn-lg">Submit</button>
+                                    <button type="submit" class="btn btn-lightBlue btn-lg">Submit</button>
                                 </div>
                             </form>
                         </div>
