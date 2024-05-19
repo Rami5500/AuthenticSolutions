@@ -10,6 +10,21 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ @keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.header-animated-background {
+  background: linear-gradient(270deg, #082f38, #006d77, #00a3a3);
+  background-size: 600% 600%;
+  animation: gradientBackground 15s ease infinite;
+  color: white;
+}
+
+
 :root {
   --bs-default: #082f38;
   --bs-blue: #0d6efd;
