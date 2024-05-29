@@ -24,6 +24,34 @@
   color: white;
 }
 
+.bi-star-fill {
+  color: #ffc107; /* Gold color for stars */
+  font-size: 24px; /* Size of stars */
+  margin-right: 4px; /* Space between stars */
+}
+
+/* Carousel Control Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #0dcaf0; /* Full black background */
+    border-radius: 50%; /* Circular shape */
+}
+
+/* Enhancing visibility with larger size and padding */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 35px; /* Increase width */
+    height: 35px; /* Increase height */
+    padding: 5px; /* Add padding */
+}
+
+/* Carousel Indicators */
+.carousel-indicators button {
+    background-color: #082f38; /* Black indicators */
+    width: 10px; /* Wider for better visibility */
+    height: 10px; /* Taller for better visibility */
+    border-radius: 50%; /* Circular indicators */
+}
 
 :root {
   --bs-default: #082f38;

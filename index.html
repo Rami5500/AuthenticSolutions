@@ -178,32 +178,140 @@
 
             <!-- Testimonial section-->
             <div class="py-5 bg-light">
-                <div class="container px-5 my-5">
+                <div class="container px-5 my-4">
                     <div class="text-center">
-                        <h2 class="display-4 fw-bolder text-black">Client Testimonials</h2> <!-- Title added -->
+                        <h2 class="display-4 fw-bolder text-black">Client Testimonials</h2>
                     </div>
                     <br>
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-10 col-xl-7">
-                            <div class="text-center">
-                                <div class="fs-4 mb-4 fst-italic">"We have worked with Authentic Solutions on multiple automated systems for our website for different purposes and are delighted with the results. We would definitely recommend working with Authentic Solutions in the Future!"</div>
-                                <div class="d-flex align-items-center justify-content-center">
-                                    <img class="rounded-circle me-2" src="./assets/HalalGym.png" alt="HalalGym Logo" style="max-width: 40px;" /> <!-- Added HalalGym logo -->
-                                    <div class="fw-bold">
-                                        HalalGym
-                                    </div>
-                                    <br>
-                                </div>
-                                <a href="https://instagram.com/halalgym3?igshid=MmU2YjMzNjRlOQ==" target="_blank" rel="noopener noreferrer">
-                                    <img class="rounded-circle me-3" src="./assets/InstaLogo.png" alt="Instagram Logo" style="max-width: 40px;" />
-                                </a>
-                            </div>
+                    <br>
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <!-- Indicators/dots -->
+                        <div class="carousel-indicators" >
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-10 col-xl-7">
+                                        <div class="text-center">
+                                            <!-- Testimonial 1 -->
+                                            <div class="fs-4 mb-4 fst-italic">"We have worked with Authentic Solutions on multiple automated systems for our website for different purposes and are delighted with the results. We would definitely recommend working with Authentic Solutions in the Future!"</div>
+                                            <!-- Star Rating -->
+                                            <div class="mb-4">
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <img class="rounded-circle me-2" src="./assets/HalalGym.png" alt="HalalGym Logo" style="max-width: 40px;" />
+                                                <div class="fw-bold">HalalGym</div>
+                                            </div>
+                                            <a href="https://instagram.com/halalgym3?igshid=MmU2YjMzNjRlOQ==" target="_blank" rel="noopener noreferrer">
+                                                <img class="rounded-circle me-3" src="./assets/InstaLogo.png" alt="Instagram Logo" style="max-width: 40px;" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-10 col-xl-7">
+                                        <div class="text-center">
+                                            <!-- Testimonial 2 -->
+                                            <div class="fs-4 mb-4 fst-italic">"Authentic Solutions have really helped me improve my portfolio that I can quickly showcase to employers and improve my chances of finding a job that I want. They provided me with the complete code for the site to allow me to have a copy but the hosting and maintenance they provide is fantastic."</div>
+                                            <!-- Star Rating -->
+                                            <div class="mb-4">
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                            </div>
+                                            <!-- Site Images -->
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <div class="me-3">
+                                                    <img class="rounded" src="./assets/Niyaz-Site-1.png" alt="Before Website" style="max-width: 100px;" />
+                                                </div>
+                                                <div>
+                                                    <img class="rounded" src="./assets/Niyaz-Site-2.png" alt="After Website" style="max-width: 100px;" />
+                                                </div>
+                                            </div>
+                                            <!-- Client details -->
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <!-- Modify image and name accordingly -->
+                                                <img class="rounded-circle me-2" src="./assets/portfolio-icon.png" alt="Client Logo" style="max-width: 40px;" />
+                                                <div class="fw-bold">Niyaz Ahmed</div>
+                                            </div>
+                                            <!-- Social link or any additional link -->
+                                            <a href="https://niyazportfolio.netlify.app/" target="_blank" rel="noopener noreferrer">
+                                                <img class="rounded-circle me-3" src="./assets/site-link.png" alt="Social Media Logo" style="max-width: 40px;" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-item">
+                                <div class="row gx-5 justify-content-center">
+                                    <div class="col-lg-10 col-xl-7">
+                                        <div class="text-center">
+                                            <!-- Testimonial 3 -->
+                                            <div class="fs-4 mb-4 fst-italic">"I really recommend Authentic Solutions to anyone, especially those looking to create an online portfolio with a website. I am able to receive support with my website anytime and able to update my website with a quick message. My website has impressed quite a few people I have shared with and has landed me a better paying job."</div>
+                                            <!-- Star Rating -->
+                                            <div class="mb-4">
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                            </div>
+                                            <!-- Before and After Images -->
+                                            <div class="d-flex justify-content-center mb-4">
+                                                <div class="me-3">
+                                                    <img class="rounded" src="./assets/Rami-Before.png" alt="Before Website" style="max-width: 100px;" />
+                                                    <div class="small text-muted">Before</div>
+                                                </div>
+                                                <div>
+                                                    <img class="rounded" src="./assets/Rami-After.png" alt="After Website" style="max-width: 100px;" />
+                                                    <div class="small text-muted">After</div>
+                                                </div>
+                                            </div>
+                                            <!-- Client details -->
+                                            <div class="d-flex align-items-center justify-content-center">
+                                                <!-- Modify image and name accordingly -->
+                                                <img class="rounded-circle me-2" src="./assets/portfolio-icon.png" alt="Client Logo" style="max-width: 40px;" />
+                                                <div class="fw-bold">Digitalwithrami</div>
+                                            </div>
+                                            <!-- Social link or any additional link -->
+                                            <a href="https://digitalwithrami.com/" target="_blank" rel="noopener noreferrer">
+                                                <img class="rounded-circle me-3" src="./assets/site-link.png" alt="Social Media Logo" style="max-width: 40px;" />
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <br>
+                        <br>
+                        <!-- Carousel controls -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
                 </div>
             </div>
-
-
+            
 
             <!-- Contact Form -->
             <section class="py-5 text-white" id="contact" style="background-color: #082f38;">
