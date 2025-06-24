@@ -1,681 +1,688 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Authentic Solutions provides custom AI chatbot solutions to enhance customer service and lead generation, offering comprehensive digital marketing services including SEO, copywriting, and email marketing strategies." />
-        <meta name="author" content="Authentic Solutions" />
-        <title>Authentic Solutions</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/LogoSymbol.png" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        <script type="application/ld+json">
-            {
-                "@context": "http://schema.org",
-                "@type": "Organization",
-                "name": "Authentic Solutions",
-                "url": "http://www.autheticsolutions.co.uk",
-                "logo": "http://www.autheticsolutions.co.uk/assets/LogoSymbol.png",
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+07417589468",
-                    "contactType": "customer service"
-                },
-            }
-        </script>
-    </head>
-    <body class="d-flex flex-column h-100">
-        <main class="flex-shrink-0">
-            <!-- Navigation-->
-            <nav class="navbar navbar-expand-lg navbar-light bg-default">
-                <div class="container px-5">
-                    <a class="navbar-brand" href="index.html">
-                        <img src="./assets/LogoSymbol.png" alt="Logo" style="max-height: 40px;">
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="index.html" style="color: white; font-size: 20px;">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="portfolio.html" style="color: white; font-size: 20px;">Portfolio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact" style="color: white; font-size: 20px;">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!-- Header-->
-            <header class="py-5 text-center" style="background-color: #082f38; color: white;">
-            <div class="container px-5">
-                <div class="row gx-5 align-items-center">
-                    <!-- Text content -->
-                    <div class="col-lg-6 text-start header-content">
-                        <h1 style="color: white;">Launch Your Professional Website Today!</h1>
-                        <!-- Mobile view logo position -->
-                        <div class="mobile-logo d-lg-none">
-                            <img src="./assets/Pinancle-Properties-Image1.png" class="img-fluid" style="padding: 20px 0;" alt="Pinnacle Properties Logo">
-                        </div>                         
-                        <h2 style="color: white;">Fast, Affordable, and we take care of Hosting!</h2>
-                        <br>
-                        <p class="lead mb-4">One off payment with the option of additional services.</p>
-                        <div class="d-grid gap-3 d-sm-flex justify-content-sm-start mb-4">
-                            <a class="btn btn-lightBlue btn-lg px-4 me-sm-3" href="portfolio.html">View Our Projects</a>
-                            <a class="btn btn-lightBlue btn-lg px-4 me-sm-3" href="#features">Our Services</a>
-                        </div>
-                    </div>
 
-                    <!-- Desktop image on right -->
-                    <div class="col-lg-6 d-none d-lg-block text-center">
-                        <img src="./assets/Pinancle-Properties-Image1.png" class="img-fluid" style="padding: 20px 0; max-height: 400px;" alt="Pinnacle Properties Logo">
-                    </div>
+<head>
+    <meta charset="utf-8">
+    <title>Authentic Solutions</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="website development, website agency, seo, email marketing, hosting, domain setup, modern website, graphic design" name="keywords">
+    <meta content="Website Agency that is fast, affordable and provides hosting" name="description">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/LogoSymbol.png" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border position-relative text-primary" style="width: 6rem; height: 6rem;" role="status"></div>
+        <i class="fa fa-laptop-code fa-2x text-primary position-absolute top-50 start-50 translate-middle"></i>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Topbar Start -->
+    <!-- <div class="container-fluid bg-light px-0 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row gx-0 align-items-center d-none d-lg-flex">
+            <div class="col-lg-6 px-5 text-start">
+                <ol class="breadcrumb mb-0">
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Career</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Terms</a></li>
+                    <li class="breadcrumb-item"><a class="small text-secondary" href="#">Privacy</a></li>
+                </ol>
+            </div>
+            <div class="col-lg-6 px-5 text-end">
+                <small>Follow us:</small>
+                <div class="h-100 d-inline-flex align-items-center">
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-twitter"></i></a>
+                    <a class="btn-square text-primary border-end rounded-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn-square text-primary pe-0" href=""><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
-        </header>
-
-
-
-
-            <style>
-                @media (max-width: 991px) { /* Adjust this value based on when your navbar collapses */
-                    .navbar-collapse {
-                        display: block; /* Change from flex to block for mobile views if necessary */
-                        width: 100%; /* Optional: Makes it full width */
-                        position: absolute;
-                        right: 0;
-                        top: 100%; /* Positions below the navbar */
-                        background-color: #082f38; /* Background color adjustment if needed */
-                        padding: 20px;
-                    }
-                }
-
-                @media (max-width: 991px) {
-                    .header-content {
-                        text-align: center; /* Centers text for smaller screens */
-                    }
-                    .mobile-logo {
-                        display: block; /* Ensures logo is displayed only on mobile */
-                    }
-                }
-            
-                @media (min-width: 992px) {
-                    .mobile-logo {
-                        display: none; /* Hides the mobile-only logo on larger screens */
-                    }
-                    .d-none.d-lg-block {
-                        display: block; /* Ensures the desktop logo is displayed on larger screens */
-                    }
-                }
-            </style>
-            
-
-            
-            <!-- Features Section -->
-            <section id="features" class="py-5" style="background-color: white;">
-                <div class="container px-5 my-5">
-                    <div class="row gx-5">
-                        <div class="col-lg-4">
-                            <h1 class="fw-bolder">Our Services</h1>
-                        </div>
-                        <div class="col-lg-8">
-                            <div class="row gx-5 row-cols-1 row-cols-md-2">
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-gradient text-white rounded-circle mb-3" style="background-color: #082f38;">
-                                        <i class="bi bi-palette"></i>
-                                    </div>
-                                    <h3 class="h5">Guaranteed Hosting</h3>
-                                    <p>Allowing you to never have to worry about your site every going down.</p>
-                                </div>
-                                <div class="col h-100">
-                                    <div class="feature bg-gradient text-white rounded-circle mb-3" style="background-color: #082f38;">
-                                        <i class="bi bi-journal-text"></i>
-                                    </div>
-                                    <h3 class="h5">Domain Setup</h3>
-                                    <p>We can be trusted with connecting the website to your custom domain.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-gradient text-white rounded-circle mb-3" style="background-color: #082f38;">
-                                        <i class="bi bi-chat-left-text"></i>
-                                    </div>
-                                    <h3 class="h5">AI Chatbot</h3>
-                                    <p>Transform your customer service with innovative AI solutions and have a lead capturing assistant.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-gradient text-white rounded-circle mb-3" style="background-color: #082f38;">
-                                        <i class="bi bi-pencil-square"></i>
-                                    </div>
-                                    <h3 class="h5">Copywriting</h3>
-                                    <p>Engage your audience with compelling written content that drives action.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-gradient text-white rounded-circle mb-3" style="background-color: #082f38;">
-                                        <i class="bi bi-envelope"></i>
-                                    </div>
-                                    <h3 class="h5">Email Marketing</h3>
-                                    <p>Draw people back to your website with targeted email campaigns.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-gradient text-white rounded-circle mb-3" style="background-color: #082f38;">
-                                        <i class="bi bi-graph-up"></i>
-                                    </div>
-                                    <h3 class="h5">SEO</h3>
-                                    <p>Boost your site's search engine ranking and visibility with expert SEO strategies.</p>
-                                </div>
-                                <div class="col mb-5 h-100">
-                                    <div class="feature bg-gradient text-white rounded-circle mb-3" style="background-color: #082f38;">
-                                        <i class="bi bi-palette"></i>
-                                    </div>
-                                    <h3 class="h5">Graphic Design</h3>
-                                    <p>Create a strong brand identity with custom graphics, from logos to web visuals.</p>
-                                </div>
-                                <div class="col h-100">
-                                    <div class="feature bg-gradient text-white rounded-circle mb-3" style="background-color: #082f38;">
-                                        <i class="bi bi-journal-text"></i>
-                                    </div>
-                                    <h3 class="h5">Modern Websites</h3>
-                                    <p>Attract your customers with modern and stylish websites.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- About Us section -->
-            <div class="py-5" style="background-color: #082f38;">
-                <h2 class="display-4 fw-bolder text-white text-center">About Us</h2>
-                <div class="container px-5 my-5">
-                    <div class="row gx-5 align-items-center">
-                        <!-- Text Content -->
-                        <div class="col-lg-7">
-                            <div class="text-center text-lg-start">
-                                <p class="lead fw-normal text-white mb-4">
-                                    At Authentic Solutions, we revolutionize your digital experience with quick, cost-effective web solutions, providing you with a site in a short period of time. We are committed to fostering growth and enhancing your online presence.
-                                </p>
-                                <p class="text-white mb-4">
-                                    From AI chatbots enhancing customer interaction to effective SEO strategies boosting your site's visibility, our tailored services ensure you stand out in the digital space.
-                                </p>
-                                <!-- Highlight offers and CTA -->
-                                <p class="text-white mb-4">
-                                    Kickstart your journey with us with a discounted offer for a limited time on all extra services and hosting plans!
-                                </p>
-                            </div>
-                        </div>
-
-                        <!-- Video on Right (desktop) and Top (mobile) -->
-                        <div class="col-lg-5 mb-4 mb-lg-0 text-center">
-                            <video class="img-fluid" style="padding: 20px 0;" autoplay loop muted playsinline>
-                                <source src="./assets/Logo_animation.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Testimonial section-->
-            <div class="py-5 bg-light">
-                <div class="container px-5 my-4">
-                    <div class="text-center">
-                        <h2 class="display-4 fw-bolder text-black">Testimonials</h2>
-                    </div>
-                    <br>
-                    <br>
-                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-                        <!-- Indicators/dots -->
-                        <div class="carousel-indicators">
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
-                            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
-                        </div>
-                        <!-- Wrapper for slides -->
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-10 col-xl-7">
-                                        <div class="text-center">
-                                            <!-- Testimonial 1 - Halal Gym -->
-                                            <div class="fs-4 mb-4 fst-italic">"We have worked with Authentic Solutions on multiple automated systems for our website for different purposes and are delighted with the results. We would definitely recommend working with Authentic Solutions in the Future!"</div>
-                                            <!-- Star Rating -->
-                                            <div class="mb-4">
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <img class="rounded-circle me-2" src="./assets/HalalGym.png" alt="HalalGym Logo" style="max-width: 40px;" />
-                                                <div class="fw-bold">HalalGym</div>
-                                            </div>
-                                            <a href="https://instagram.com/halalgym3?igshid=MmU2YjMzNjRlOQ==" target="_blank" rel="noopener noreferrer">
-                                                <img class="rounded-circle me-3" src="./assets/InstaLogo.png" alt="Instagram Logo" style="max-width: 40px;" />
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-10 col-xl-7">
-                                        <div class="text-center">
-                                            <!-- Testimonial 2 - Niyaz Portfolio-->
-                                            <div class="fs-4 mb-4 fst-italic">"Authentic Solutions have really helped me improve my portfolio that I can quickly showcase to employers and improve my chances of finding a job that I want. They provided me with the complete code for the site to allow me to have a copy but the hosting and maintenance they provide is fantastic."</div>
-                                            <!-- Star Rating -->
-                                            <div class="mb-4">
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                            </div>
-                                            <!-- Site Images -->
-                                            <div class="d-flex justify-content-center mb-4">
-                                                <div class="me-3">
-                                                    <img class="rounded" src="./assets/Niyaz-Site-1.png" alt="Before Website" style="max-width: 100px;" />
-                                                </div>
-                                                <div>
-                                                    <img class="rounded" src="./assets/Niyaz-Site-2.png" alt="After Website" style="max-width: 100px;" />
-                                                </div>
-                                            </div>
-                                            <!-- Client details -->
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <!-- Modify image and name accordingly -->
-                                                <img class="rounded-circle me-2" src="./assets/portfolio-icon.png" alt="Client Logo" style="max-width: 40px;" />
-                                                <div class="fw-bold">Niyaz Ahmed</div>
-                                            </div>
-                                            <!-- Social link or any additional link -->
-                                            <a href="https://niyazportfolio.netlify.app/" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
-                                                View the website
-                                            </a> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-10 col-xl-7">
-                                        <div class="text-center">
-                                            <!-- Testimonial 3 - Badminton Club -->
-                                            <div class="fs-4 mb-4 fst-italic">"I would highly recommend Authentic Solutions. I was notified when the website was started and updated all the time on the progress. The fast turn around of a day was very good. The site was much better than I expected and I was surprised. Thank you."</div>
-                                            <!-- Star Rating -->
-                                            <div class="mb-4">
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                            </div>
-                                            <!-- Before and After Images -->
-                                            <div class="d-flex justify-content-center mb-4">
-                                                <div class="me-3">
-                                                    <img class="rounded" src="./assets/Badminton-Image-1.png" alt="Before Website" style="max-width: 100px;" />
-                                                    <div class="small text-muted">Before</div>
-                                                </div>
-                                                <div>
-                                                    <img class="rounded" src="./assets/Badminton-Image-2.png" alt="After Website" style="max-width: 100px;" />
-                                                    <div class="small text-muted">After</div>
-                                                </div>
-                                            </div>
-                                            <!-- Client details -->
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <!-- Modify image and name accordingly -->
-                                                <img class="rounded-circle me-2" src="./assets/Tigers-Logo.png" alt="Client Logo" style="max-width: 40px;" />
-                                                <div class="fw-bold">Six Tigers</div>
-                                            </div>
-                                            <!-- Social link or any additional link -->
-                                            <a href="https://sixtigers.co.uk" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
-                                                View the website
-                                            </a> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                            <div class="carousel-item">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-10 col-xl-7">
-                                        <div class="text-center">
-                                            <!-- Testimonial 4 - Arjun Portfolio -->
-                                            <div class="fs-4 mb-4 fst-italic">"I needed a way to send out a link quickly to employers with jobs that interest me and this is has been a perfect way of doing it. I was provided with a custom site within a day and I am amazed at the quality and hosting provided. Many thanks."</div>
-                                            <!-- Star Rating -->
-                                            <div class="mb-4">
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                            </div>
-                                            <!-- Site Images -->
-                                            <div class="d-flex justify-content-center mb-4">
-                                                <div class="me-3">
-                                                    <img class="rounded" src="./assets/Arjun-Site-1.png" alt="Before Website" style="max-width: 100px;" />
-                                                </div>
-                                                <div>
-                                                    <img class="rounded" src="./assets/Arjun-Site-2.png" alt="After Website" style="max-width: 100px;" />
-                                                </div>
-                                            </div>
-                                            <!-- Client details -->
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <!-- Modify image and name accordingly -->
-                                                <img class="rounded-circle me-2" src="./assets/portfolio-icon.png" alt="Client Logo" style="max-width: 40px;" />
-                                                <div class="fw-bold">Arjun Dhillon</div>
-                                            </div>
-                                            <!-- Social link or any additional link -->
-                                            <a href="https://arjuns-site.netlify.app/" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
-                                                View the website
-                                            </a> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-10 col-xl-7">
-                                        <div class="text-center">
-                                            <!-- Testimonial 5 - DigitalwithRami -->
-                                            <div class="fs-4 mb-4 fst-italic">"I really recommend Authentic Solutions to anyone, especially those looking to create an online portfolio with a website. I am able to receive support with my website anytime and able to update my website with a quick message. My website has impressed quite a few people I have shared with and has landed me a better paying job."</div>
-                                            <!-- Star Rating -->
-                                            <div class="mb-4">
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                            </div>
-                                            <!-- Before and After Images -->
-                                            <div class="d-flex justify-content-center mb-4">
-                                                <div class="me-3">
-                                                    <img class="rounded" src="./assets/Rami-Before.png" alt="Before Website" style="max-width: 100px;" />
-                                                    <div class="small text-muted">Before</div>
-                                                </div>
-                                                <div>
-                                                    <img class="rounded" src="./assets/Rami-After.png" alt="After Website" style="max-width: 100px;" />
-                                                    <div class="small text-muted">After</div>
-                                                </div>
-                                            </div>
-                                            <!-- Client details -->
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <!-- Modify image and name accordingly -->
-                                                <img class="rounded-circle me-2" src="./assets/portfolio-icon.png" alt="Client Logo" style="max-width: 40px;" />
-                                                <div class="fw-bold">Digitalwithrami</div>
-                                            </div>
-                                            <!-- Social link or any additional link -->
-                                            <a href="https://digitalwithrami.com/" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
-                                                View the website
-                                            </a> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            
-                            <div class="carousel-item">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-10 col-xl-7">
-                                        <div class="text-center">
-                                            <!-- Testimonial 6 - Ayo's portfolio -->
-                                            <div class="fs-4 mb-4 fst-italic">"A big thank you for the website. Honestly exceeded my expectations with the site and having a link I can just send people, helps me a lot."</div>
-                                            <!-- Star Rating -->
-                                            <div class="mb-4">
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                            </div>
-                                            <!-- Before and After Images -->
-                                            <div class="d-flex justify-content-center mb-4">
-                                                <div class="me-3">
-                                                    <img class="rounded" src="./assets/Ayo-Image 1.png" alt="Before Website" style="max-width: 100px;" />
-                                                </div>
-                                                <div>
-                                                    <img class="rounded" src="./assets/Ayo-Image 2.png" alt="After Website" style="max-width: 100px;" />
-                                                </div>
-                                            </div>
-                                            <!-- Client details -->
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <!-- Modify image and name accordingly -->
-                                                <img class="rounded-circle me-2" src="./assets/portfolio-icon.png" alt="Client Logo" style="max-width: 40px;" />
-                                                <div class="fw-bold">Ayokunle Bello</div>
-                                            </div>
-                                            <!-- Social link or any additional link -->
-                                            <a href="https://ayos-site.netlify.app/" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
-                                                View the website
-                                            </a> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-10 col-xl-7">
-                                        <div class="text-center">
-                                            <!-- Testimonial 7 - Imrans's portfolio -->
-                                            <div class="fs-4 mb-4 fst-italic">"I really appreciated the updates I was provided about the progress and was amazed with how my website looked. This was mainly due to the fast turnaround of a day. I would honestly recommend this to anyone."</div>
-                                            <!-- Star Rating -->
-                                            <div class="mb-4">
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                            </div>
-                                            <!-- Before and After Images -->
-                                            <div class="d-flex justify-content-center mb-4">
-                                                <div class="me-3">
-                                                    <img class="rounded" src="./assets/Imran-Image 1.png" alt="Before Website" style="max-width: 100px;" />
-                                                </div>
-                                                <div>
-                                                    <img class="rounded" src="./assets/Imran-Image 2.png" alt="After Website" style="max-width: 100px;" />
-                                                </div>
-                                            </div>
-                                            <!-- Client details -->
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <!-- Modify image and name accordingly -->
-                                                <img class="rounded-circle me-2" src="./assets/portfolio-icon.png" alt="Client Logo" style="max-width: 40px;" />
-                                                <div class="fw-bold">Mohammed Imran</div>
-                                            </div>
-                                            <!-- Social link or any additional link -->
-                                            <a href="https://imrans-site.netlify.app/" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
-                                                View the website
-                                            </a> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-10 col-xl-7">
-                                        <div class="text-center">
-                                            <!-- Testimonial 8 - Ranvir's Site -->
-                                            <div class="fs-4 mb-4 fst-italic">"The website is honestly amazing. I wanted a way to showcase my work and be proud of it. I am able to message and get quick replies regarding images that I want to add to the site to make sure it is updated and I am able to do that."</div>
-                                            <div class="mb-4">
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                            </div>
-                                            <div class="d-flex justify-content-center mb-4">
-                                                <div class="me-3">
-                                                    <img class="rounded" src="./assets/Ranvir-Image-1.png" alt="Before Website" style="max-width: 100px;" />
-                                                </div>
-                                                <div>
-                                                    <img class="rounded" src="./assets/Ranvir-Image-2.png" alt="After Website" style="max-width: 100px;" />
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <img class="rounded-circle me-2" src="./assets/portfolio-icon.png" alt="Client Logo" style="max-width: 40px;" />
-                                                <div class="fw-bold">r4nv17 0pt1cs</div>
-                                            </div>
-                                            <a href="https://ranvir-site.netlify.app/" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
-                                                View the website
-                                            </a> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="carousel-item">
-                                <div class="row gx-5 justify-content-center">
-                                    <div class="col-lg-10 col-xl-7">
-                                        <div class="text-center">
-                                            <!-- Testimonial 9 - Mayfair Recruitment Site -->
-                                            <div class="fs-4 mb-4 fst-italic">"I really appreciate how quickly the turnaround and how easy the process was. I provided them my current site and they provided me with a new one after a day and so far its been doing really well. I would recommend."</div>
-                                            <div class="mb-4">
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
-                                            </div>
-                                            <div class="d-flex justify-content-center mb-4">
-                                                <div class="me-3">
-                                                    <img class="rounded" src="./assets/recruitment_Image_1.png" alt="Before Website" style="max-width: 100px;" />
-                                                </div>
-                                                <div>
-                                                    <img class="rounded" src="./assets/recruitment_Image_2.png" alt="After Website" style="max-width: 100px;" />
-                                                </div>
-                                            </div>
-                                            <div class="d-flex align-items-center justify-content-center">
-                                                <img class="rounded-circle me-2" src="./assets/portfolio-icon.png" alt="Client Logo" style="max-width: 40px;" />
-                                                <div class="fw-bold">Mayfair Recruitment</div>
-                                            </div>
-                                            <a href="https://mayfair-rec.netlify.app/" target="_blank" rel="noopener noreferrer" style="color: #007BFF; text-decoration: underline;">
-                                                View the website
-                                            </a> 
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                        <br>
-                        <br>
-                        <!-- Carousel controls -->
-                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                    </div>
-                    </div>
-                    
-            
-
-            <!-- Contact Form -->
-            <section class="py-5 text-white" id="contact" style="background-color: #082f38;">
-                <div class="container px-5">
-                    <div class="row gx-5 justify-content-center">
-                        <div class="col-lg-8 col-xl-7">
-                            <div class="text-center">
-                                <h2 class="fw-bolder">Contact Us</h2>
-                                <p class="lead fw-normal mb-5">Get in touch with us for inquiries or project discussions.</p>
-                            </div>
-                            <form name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" netlify>
-                                <input type="hidden" name="form-name" value="contact" />
-                                <input type="hidden" name="method" value="POST" />
-                                <div class="mb-3">
-                                    <label for="fullName" class="form-label">Full Name</label>
-                                    <input type="text" class="form-control" id="fullName" name="fullName" placeholder="Your full name" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject of your inquiry" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="email" class="form-label">Your Email</label>
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your email address" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" name="message" rows="4" placeholder="Your message" required></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="budget" class="form-label">Your Budget for the Project</label>
-                                    <input type="text" class="form-control" id="budget" name="budget" placeholder="Your budget" required>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" class="btn btn-lightBlue btn-lg">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer class="py-4 mt-auto" style="background-color: #082f38;">
-            <div class="container px-5">
-                <div class="row align-items-center justify-content-between">
-                    <!-- Logo on the left -->
-                    <div class="col-auto" href="index.html">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="./assets/LogoTitle.png" alt="Logo" style="max-height: 50px;">
-                        </a>
-                    </div>
-        
-                    <!-- Contact details in the middle -->
-                    <div class="col-auto text-center">
-                        <div class="text-white" style="font-size: 14px;">Call us: 07417589468</div>
-                        <div class="text-white" style="font-size: 14px;">Email: autheticsolutions55@gmail.com</div>
-                    </div>
-        
-                    <!-- Copyright information on the right -->
-                    <div class="col-auto text-white">
-                        <div class="small m-0 text-white">Copyright &copy; Authentic Solutions 2024</div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-        
-
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-        
-    </body>
-</html>
-
-
-<!-- 
-<aside class="bg-primary bg-gradient rounded-3 p-4 p-sm-5 mt-5">
-    <div class="d-flex align-items-center justify-content-between flex-column flex-xl-row text-center text-xl-start">
-        <div class="mb-4 mb-xl-0">
-            <div class="fs-3 fw-bold text-white">New products, delivered to you.</div>
-            <div class="text-white-50">Sign up for our newsletter for the latest updates.</div>
         </div>
-        <div class="ms-xl-4">
-            <div class="input-group mb-2">
-                <input class="form-control" type="text" placeholder="Email address..." aria-label="Email address..." aria-describedby="button-newsletter" />
-                <button class="btn btn-outline-light" id="button-newsletter" type="button">Sign up</button>
+    </div> -->
+    <!-- Topbar End -->
+
+
+    <!-- Brand & Contact Start -->
+    <div class="container-fluid py-4 px-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="row align-items-center top-bar">
+            <div class="col-lg-4 col-md-12 text-center text-lg-start">
+                <a href="index.html" class="navbar-brand m-0 p-0">
+                    <h4 class="fw-bold text-primary m-0"><i class="fa fa-laptop-code me-3"></i>Authentic Solutions</h4>
+                    <!-- <img src="img/logo.png" alt="Logo"> -->
+                </a>
             </div>
-            <div class="small text-white-50">We care about privacy, and will never share your data.</div>
+            <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                <div class="row">
+                    <!-- <div class="col-4">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="far fa-clock text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Opening Hour</p>
+                                <h6 class="mb-0">Mon - Fri, 8:00 - 20:00</h6>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="col-6">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="fa fa-phone text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Call Us</p>
+                                <h6 class="mb-0">07417589468</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="d-flex align-items-center justify-content-end">
+                            <div class="flex-shrink-0 btn-lg-square border rounded-circle">
+                                <i class="far fa-envelope text-primary"></i>
+                            </div>
+                            <div class="ps-3">
+                                <p class="mb-2">Email Us</p>
+                                <h6 class="mb-0">authenticsolutions55@gmail.com</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</aside>
+    <!-- Brand & Contact End -->
 
--->
 
-<!-- Calendly link = https://calendly.com/admin-5sjs/consultation -->
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark sticky-top py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
+        <a href="#" class="navbar-brand ms-3 d-lg-none"></a>
+        <button type="button" class="navbar-toggler me-3" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav me-auto p-3 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About Us</a>
+                <a href="service.html" class="nav-item nav-link">Services</a>
+                <a href="project.html" class="nav-item nav-link">Projects</a>
+                <a href="testimonial.html" class="nav-item nav-link">Testimonials</a>
+            </div>
+            <a href="contact.html" class="btn btn-sm btn-light rounded-pill py-2 px-4 d-none d-lg-block">Contact Us</a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+
+    <!-- Hero Section Start -->
+    <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="position-relative" style="height: 100vh;">
+            <!-- Background Image -->
+            <img class="w-100 h-100" src="img/carousel-4.jpg" alt="Background Image" style="object-fit: cover;">
+
+            <!-- Dark Overlay -->
+            <div class="position-absolute top-0 start-0 w-100 h-100" style="background-color: rgba(0, 0, 0, 0.5);"></div>
+
+            <!-- Text Overlay -->
+            <div class="position-absolute top-50 start-50 translate-middle text-center px-3" style="max-width: 900px; color: white;">
+                <h4 class="text-uppercase mb-4 animated zoomIn" style="color: white;">We Are Leader In</h4>
+                <h1 class="display-1 mb-0 animated zoomIn" style="color: white;">Creative & Innovative Digital Solution</h1>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Facts Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-certificate fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Years Experience</h5>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">8</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-users-cog fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Hosting Uptime</h5>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">100</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-users fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Satisfied Clients</h5>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">20</h1>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                    <div class="fact-item bg-light rounded text-center h-100 p-5">
+                        <i class="fa fa-check fa-4x text-primary mb-4"></i>
+                        <h5 class="mb-3">Projects Done</h5>
+                        <h1 class="display-5 mb-0" data-toggle="counter-up">20</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
+
+    <!-- About Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <!-- Image -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <video class="img-fluid" style="padding: 20px 0;" autoplay loop muted playsinline>
+                            <source src="./img/Logo_animation.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                </div>
+
+                <!-- Text Content -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="h-100">
+                        <h6 class="section-title bg-white text-start text-primary pe-3">About Us</h6>
+                        <h1 class="display-6 mb-4">Affordable & Fast <span class="text-primary">Web Solutions</span> for Your Business</h1>
+                        <p>
+                            At <strong>Authentic Solutions</strong>, we revolutionize your digital experience with quick, cost-effective websites — designed, built, and launched in a short period of time.
+                        </p>
+                        <p class="mb-4">
+                            Whether you're an entrepreneur, startup, or growing brand — we help you build a professional online presence that drives results. Our services include web design, graphic design, SEO, copywriting, and more — all tailored to your goals.
+                        </p>
+                        <!-- <div class="d-flex align-items-center mb-4 pb-2">
+                            <img class="flex-shrink-0 rounded-circle" src="img/Profile_Picture.jpg" alt="Founder Image" style="width: 50px; height: 50px;">
+                            <div class="ps-4">
+                                <h6>Rami Hassan</h6>
+                                <small>Founder, Authentic Solutions</small>
+                            </div>
+                        </div> -->
+                        <a class="btn btn-primary rounded-pill py-3 px-5" href="#contact">Start Your Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Services</h6>
+                <h1 class="display-6 mb-4">We Focus On Making The Best In All Sectors</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-1.jpg" alt="">
+                        <h4 class="mb-0">Web Development</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-7.jpg" alt="">
+                        <h4 class="mb-0">Graphic Design</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-8.jpg" alt="">
+                        <h4 class="mb-0">Hosting</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-4.jpg" alt="">
+                        <h4 class="mb-0">Domain Setup</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-3.jpg" alt="">
+                        <h4 class="mb-0">SEO Optimization</h4>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <a class="service-item d-block rounded text-center h-100 p-4" href="">
+                        <img class="img-fluid rounded mb-4" src="img/service-6.jpg" alt="">
+                        <h4 class="mb-0">Copywriting</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+    <!-- Project Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Our Projects</h6>
+                <h1 class="display-6 mb-4">Learn More About Our Complete Projects</h1>
+            </div>
+            <div class="owl-carousel project-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="project-item border rounded h-100 p-4" data-dot="01">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-1.png" alt="">
+                        <a href="img/project-1.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Pinnacle Properties</h6>
+                    <span>A modern real estate website designed to attract new customers and generate leads.</span>
+                </div>
+
+                <div class="project-item border rounded h-100 p-4" data-dot="02">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-2.png" alt="">
+                        <a href="img/project-2.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Portfolio Website</h6>
+                    <span>A professional portfolio site showcasing projects, skills, and creative achievements.</span>
+                </div>
+
+                <div class="project-item border rounded h-100 p-4" data-dot="03">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-3.png" alt="">
+                        <a href="img/project-3.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Giant Property Management</h6>
+                    <span>A clean and modern property management website built to attract new clients.</span>
+                </div>
+
+                <div class="project-item border rounded h-100 p-4" data-dot="04">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-4.png" alt="">
+                        <a href="img/project-4.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Portfolio Website</h6>
+                    <span>A sleek portfolio site designed to showcase architectural and design expertise.</span>
+                </div>
+
+                <div class="project-item border rounded h-100 p-4" data-dot="05">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-5.png" alt="">
+                        <a href="img/project-5.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Ammc Solutions</h6>
+                    <span>A professional real estate website to enhance brand presence and gain clients.</span>
+                </div>
+
+                <div class="project-item border rounded h-100 p-4" data-dot="06">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-6.png" alt="">
+                        <a href="img/project-6.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Photography Portfolio</h6>
+                    <span>A creative portfolio site presenting photography services and stunning visuals.</span>
+                </div>
+
+                <div class="project-item border rounded h-100 p-4" data-dot="07">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-7.png" alt="">
+                        <a href="img/project-7.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Mayfair Recruitment</h6>
+                    <span>A recruitment agency website focused on modern design and client engagement.</span>
+                </div>
+
+                <div class="project-item border rounded h-100 p-4" data-dot="08">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-8.png" alt="">
+                        <a href="img/project-8.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Portfolio Website</h6>
+                    <span>A personal portfolio site designed to boost visibility and showcase expertise.</span>
+                </div>
+
+                <div class="project-item border rounded h-100 p-4" data-dot="09">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-9.png" alt="">
+                        <a href="img/project-9.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Portfolio Website</h6>
+                    <span>Ayo’s creative portfolio site built to highlight skills and unique design style.</span>
+                </div>
+
+                <div class="project-item border rounded h-100 p-4" data-dot="10">
+                    <div class="position-relative mb-4">
+                        <img class="img-fluid rounded" src="img/project-10.png" alt="">
+                        <a href="img/project-10.png" data-lightbox="project"><i class="fa fa-eye fa-2x"></i></a>
+                    </div>
+                    <h6>Badminton Club</h6>
+                    <span>A modern club website created to foster community and drive member sign-ups.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Project End -->
+
+    <!-- Feature Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Text Content -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="h-100">
+                        <h6 class="section-title bg-white text-start text-primary pe-3">Why Choose Us</h6>
+                        <h1 class="display-6 mb-4">Why Businesses Trust Authentic Solutions</h1>
+                        <p class="mb-4">
+                            We deliver modern, high-converting websites — fast and affordable. Whether you need a new site or a refresh, our goal is to make your brand stand out online with professional design and seamless functionality.
+                        </p>
+                        <div class="row g-4">
+                            <div class="col-12">
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Fast Delivery</p>
+                                        <p class="mb-2">95%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Affordable Pricing</p>
+                                        <p class="mb-2">90%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="skill">
+                                    <div class="d-flex justify-content-between">
+                                        <p class="mb-2">Modern Design & Development</p>
+                                        <p class="mb-2">98%</p>
+                                    </div>
+                                    <div class="progress">
+                                        <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image -->
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="img-border">
+                        <img class="img-fluid" src="img/about2.png" alt="Why Choose Authentic Solutions">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+    <!-- Team Start -->
+    <!-- <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Our Team</h6>
+                <h1 class="display-6 mb-4">We Are A Creative Team For Your Dream Project</h1>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item text-center p-4">
+                        <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="img/team-1.jpg" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                    <div class="team-item text-center p-4">
+                        <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="img/team-2.jpg" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="team-item text-center p-4">
+                        <img class="img-fluid border rounded-circle w-75 p-2 mb-4" src="img/team-3.jpg" alt="">
+                        <div class="team-text">
+                            <div class="team-title">
+                                <h5>Full Name</h5>
+                                <span>Designation</span>
+                            </div>
+                            <div class="team-social">
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-twitter"></i></a>
+                                <a class="btn btn-square btn-primary rounded-circle" href=""><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+    <!-- Testimonial Start -->
+    <div class="container-xxl py-5">
+        <div class="container">
+            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                <h6 class="section-title bg-white text-center text-primary px-3">Testimonial</h6>
+                <h1 class="display-6 mb-4">What Our Clients Say!</h1>
+            </div>
+            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/HalalGym.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Halal Gym</h5>
+                            <span>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Working with the team was great. They built a fast, modern site that helped us grow. Would highly recommend to others.</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/portfolio-icon.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Pinnacle Properties</h5>
+                            <span>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Very pleased with the results. The website looks clean and works well on all devices. Quick turnaround too!</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/portfolio-icon.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Mayfair Recruitment</h5>
+                            <span>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Excellent communication and service. The website was delivered as promised and has already brought in leads.</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/portfolio-icon.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Ammc Solutions </h5>
+                            <span>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Our new site is exactly what we wanted. It looks professional and loads quickly. Great work from the team.</p>
+                </div>
+                <div class="testimonial-item bg-light rounded p-4">
+                    <div class="d-flex align-items-center mb-4">
+                        <img class="flex-shrink-0 rounded-circle border p-1" src="img/portfolio-icon.png" alt="">
+                        <div class="ms-4">
+                            <h5 class="mb-1">Niyaz Ahmed </h5>
+                            <span>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                                <i class="bi bi-star-fill" style="color: #ffc107;"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <p class="mb-0">Great experience from start to finish. The design fits our brand and functions smoothly across all browsers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Address</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Birmingham, UK</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>07417589468</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>authenticsolutions55@gmail.com</p>
+                    <!-- <div class="d-flex pt-2">
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-1" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-square btn-outline-secondary rounded-circle me-0" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div> -->
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Quick Links</h5>
+                    <a class="btn btn-link" href="about.html">About Us</a>
+                    <a class="btn btn-link" href="contact.html">Contact Us</a>
+                    <a class="btn btn-link" href="service.html">Our Services</a>
+                    <a class="btn btn-link" href="project.html">Projects</a>
+                    <a class="btn btn-link" href="testimonial.html">Testimonials</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Gallery</h5>
+                    <div class="row g-2">
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/project-1.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/project-2.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/project-3.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/project-4.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/project-5.png" alt="Image">
+                        </div>
+                        <div class="col-4">
+                            <img class="img-fluid rounded" src="img/project-6.png" alt="Image">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-light mb-4">Newsletter</h5>
+                    <p>A newsletter to keep you updated coming soon...</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control bg-transparent border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a href="#">Authentic Solutions</a>, All Right Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded-circle back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
